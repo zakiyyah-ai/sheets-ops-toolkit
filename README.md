@@ -16,7 +16,7 @@ Adds a **Custom Function** menu to any Google Sheet with five tools:
 
 Most tools prompt for cells/columns interactively, so there's no fixed layout to follow but a couple of tools expect specific columns. Reference below is based on what the code actually reads/writes.
 
-### Parse Json — output layout
+### Parse Json, output layout
 
 Input: one JSON array per row, e.g. `[{"label":"...","url":"..."}]`, in whatever column you point it at.
 
