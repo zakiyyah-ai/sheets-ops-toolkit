@@ -38,7 +38,7 @@ Reads from the sheet name you give it (row 1 = header, data starts row 2):
 
 | Column | Content |
 | ------ | ------- |
-| A | Event title — must match the calendar event's title exactly (case-insensitive) |
+| A | Event title, must match the calendar event's title exactly (case-insensitive) |
 | B | Link to append to the description |
 | C | Event start date/time, matched to the calendar event's start time to the minute |
 | D | New description text (this **replaces** the event's existing description) |
