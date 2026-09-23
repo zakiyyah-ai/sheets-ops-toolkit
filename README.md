@@ -10,11 +10,11 @@ Adds a **Custom Function** menu to any Google Sheet with five tools:
 | **Parse Json**                          | Reads a column of JSON strings and expands each into structured label/url rows.                                                                                                                           |
 | **Get Name File from URL**              | Resolves a human-readable name from a raw URL in Drive file, Google Form title, Colab notebook, Drive folder, YouTube playlist, or a Bitly destination.                                                  |
 | **List Filtered Events from Gcal**      | Pulls every calendar event in a date range into a sheet (title, description, location, start/end time, invited emails), used as a weekly audit to catch invite or scheduling errors before they reach students and instructors. |
-| **Bulk Update Event Descriptions**      | Reads a sheet of (title, link, start time, description) rows and writes each description + link into the matching calendar event — used to bulk-attach recording/material links to a batch of class sessions at once. |
+| **Bulk Update Event Descriptions**      | Reads a sheet of (title, link, start time, description) rows and writes each description + link into the matching calendar event, used to bulk-attach recording/material links to a batch of class sessions at once. |
 
 ## Sheet Structure Reference
 
-Most tools prompt for cells/columns interactively, so there's no fixed layout to follow — but a couple of tools expect specific columns. Reference below is based on what the code actually reads/writes.
+Most tools prompt for cells/columns interactively, so there's no fixed layout to follow but a couple of tools expect specific columns. Reference below is based on what the code actually reads/writes.
 
 ### Parse Json — output layout
 
@@ -40,7 +40,7 @@ Reads from the sheet name you give it (row 1 = header, data starts row 2):
 | ------ | ------- |
 | A | Event title — must match the calendar event's title exactly (case-insensitive) |
 | B | Link to append to the description |
-| C | Event start date/time — matched to the calendar event's start time to the minute |
+| C | Event start date/time, matched to the calendar event's start time to the minute |
 | D | New description text (this **replaces** the event's existing description) |
 
 ⚠️ Multiple events with the same title + start time will all get updated, and a warning is logged for that case — check Logs after running if you have recurring events with duplicate titles.
