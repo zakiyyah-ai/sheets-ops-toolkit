@@ -43,7 +43,7 @@ Reads from the sheet name you give it (row 1 = header, data starts row 2):
 | C | Event start date/time, matched to the calendar event's start time to the minute |
 | D | New description text (this **replaces** the event's existing description) |
 
-⚠️ Multiple events with the same title + start time will all get updated, and a warning is logged for that case — check Logs after running if you have recurring events with duplicate titles.
+⚠️ Multiple events with the same title + start time will all get updated, and a warning is logged for that case, check Logs after running if you have recurring events with duplicate titles.
 
 ## Why I built this
 
