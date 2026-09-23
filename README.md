@@ -16,7 +16,7 @@ Adds a **Custom Function** menu to any Google Sheet with five tools:
 
 Most tools prompt for cells/columns interactively, so there's no fixed layout to follow but a couple of tools expect specific columns. Reference below is based on what the code actually reads/writes.
 
-### Parse Json, output layout
+### Parse Json (output layout)
 
 Input: one JSON array per row, e.g. `[{"label":"...","url":"..."}]`, in whatever column you point it at.
 
@@ -25,14 +25,14 @@ Output: starting from the cell you choose, each array item takes **3 columns** (
 | Label 1 | URL 1 | *(blank)* | Label 2 | URL 2 | *(blank)* | ... |
 | ------- | ----- | --------- | ------- | ----- | --------- | --- |
 
-### List Filtered Events from Gcal — output layout
+### List Filtered Events from Gcal (output layout)
 
 Writes to the sheet name you give it, overwriting its contents, with this fixed header row:
 
 | Event ID | Title | Description | Location/Link | Start Time | End Time | Invited Emails |
 | -------- | ----- | ------------ | -------------- | ---------- | -------- | --------------- |
 
-### Bulk Update Event Descriptions — required input layout
+### Bulk Update Event Descriptions (required input layout)
 
 Reads from the sheet name you give it (row 1 = header, data starts row 2):
 
